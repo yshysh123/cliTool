@@ -1,6 +1,6 @@
 {
   "name": "ysh-cli",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A simple CLI for creating your projects",
   "main": "index.js",
   "scripts": {

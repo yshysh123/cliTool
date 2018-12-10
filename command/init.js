@@ -61,18 +61,19 @@ module.exports = () => {
                 }
               ])
               .then(answers => {
-                console.log(answers);
-                if (answers.tools === "yarn") {
-                  execSync(`cd ${projectName} && yarn`, { stdio: [0, 1, 2] });
-                  console.log(chalk.green("\n √ Generation completed!"));
-                  process.exit();
-                } else {
-                  execSync(`cd ${projectName} && npm install`, {
-                    stdio: [0, 1, 2]
-                  });
-                  console.log(chalk.green("\n √ Generation completed!"));
-                  process.exit();
-                }
+                co(function*() {
+                  if (answers.tools === "yarn") {
+                    execSync(`cd ${projectName} && yarn`, { stdio: [0, 1, 2] });
+                    console.log(chalk.green("\n √ Generation completed!"));
+                    process.exit();
+                  } else {
+                    execSync(`cd ${projectName} && npm install`, {
+                      stdio: [0, 1, 2]
+                    });
+                    console.log(chalk.green("\n √ Generation completed!"));
+                    process.exit();
+                  }
+                });
               });
           }
         });
