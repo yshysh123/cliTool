@@ -1,6 +1,5 @@
 "use strict";
 const { exec, execSync } = require("child_process");
-const ora = require("ora");
 const co = require("co");
 const prompt = require("co-prompt");
 const config = require("../templates");

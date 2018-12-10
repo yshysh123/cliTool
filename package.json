@@ -1,6 +1,6 @@
 {
   "name": "ysh-cli",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "A simple CLI for creating your projects",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrainlau/scion.git"
+    "url": "git+https://github.com/yshysh123/cliTool.git"
   },
   "keywords": [
     "scion",
@@ -21,9 +21,9 @@
   "author": "yusihong1 <389636851@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrainlau/scion/issues"
+    "url": "https://github.com/yshysh123/cliTool/issues"
   },
-  "homepage": "https://github.com/jrainlau/scion#readme",
+  "homepage": "https://github.com/yshysh123/cliTool#readme",
   "dependencies": {
     "chalk": "^1.1.3",
     "co": "^4.6.0",
