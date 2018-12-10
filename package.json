@@ -1,0 +1,44 @@
+{
+  "name": "ysh-cli",
+  "version": "0.0.1",
+  "description": "A simple CLI for creating your projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "scion": "bin/scion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrainlau/scion.git"
+  },
+  "keywords": [
+    "scion",
+    "cli",
+    "es6"
+  ],
+  "author": "yusihong1 <389636851@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrainlau/scion/issues"
+  },
+  "homepage": "https://github.com/jrainlau/scion#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0",
+    "download-git-repo": "^1.0.1",
+    "git-exec": "^0.2.1",
+    "global-modules": "^1.0.0",
+    "inquirer": "^5.0.0",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "nornj": "^0.4.2-rc.35",
+    "ora": "^1.3.0",
+    "process.args": "0.0.6",
+    "targz": "^1.0.1",
+    "yargs": "^11.0.0"
+  }
+}
