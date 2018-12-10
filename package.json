@@ -1,20 +1,20 @@
 {
   "name": "ysh-cli",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "A simple CLI for creating your projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "scion": "bin/scion"
+    "yush": "bin/yush"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yshysh123/cliTool.git"
   },
   "keywords": [
-    "scion",
+    "yush",
     "cli",
     "es6"
   ],

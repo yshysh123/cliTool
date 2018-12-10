@@ -1,6 +1,6 @@
 # ysh-cli
 
-The CLI for scaffolding NornJ template projects, and do more things.
+The CLI for scaffolding template projects, and do more things.
 
 ### 安装
 
@@ -12,11 +12,11 @@ npm i ysh-cli -g
 
 ```sh
 //初始化项目，目前可选择的模板有：react+mobx  vue+vuex
-scion init
+yush init
 //增加模板：可以增加自己想要的模板
-scion add
+yush add
 //删除模板
-scion delete
+yush delete
 //模板list
-scion list
+yush list
 ```

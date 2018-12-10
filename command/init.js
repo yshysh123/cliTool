@@ -51,10 +51,30 @@ module.exports = () => {
             console.log(chalk.green("\n √ Create completed!"));
             process.exit();
           } else {
-            execSync(`cd ${projectName} && npm install`, { stdio: [0, 1, 2] });
+            inquirer
+              .prompt([
+                {
+                  type: "list",
+                  name: "tools",
+                  message: "Use yarn or npm",
+                  choices: ["yarn", "npm"]
+                }
+              ])
+              .then(answers => {
+                console.log(answers);
+                if (answers.tools === "yarn") {
+                  execSync(`cd ${projectName} && yarn`, { stdio: [0, 1, 2] });
+                  console.log(chalk.green("\n √ Generation completed!"));
+                  process.exit();
+                } else {
+                  execSync(`cd ${projectName} && npm install`, {
+                    stdio: [0, 1, 2]
+                  });
+                  console.log(chalk.green("\n √ Generation completed!"));
+                  process.exit();
+                }
+              });
           }
-          console.log(chalk.green("\n √ Generation completed!"));
-          process.exit();
         });
       });
     });
