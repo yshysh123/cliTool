@@ -1,5 +1,7 @@
 # ysh-cli
 
+<a href="https://www.npmjs.com/package/ysh-cli"><img src="https://img.shields.io/npm/v/ysh-cli.svg" alt="Version"></a>
+
 The CLI for scaffolding template projects, and do more things.
 
 ### 安装
