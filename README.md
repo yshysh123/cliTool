@@ -4,7 +4,7 @@
 
 The CLI for scaffolding template projects, and do more things.
 
-### 安装
+### install
 
 ```sh
 npm i ysh-cli -g
